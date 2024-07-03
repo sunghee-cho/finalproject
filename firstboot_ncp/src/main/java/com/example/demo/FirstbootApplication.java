@@ -15,9 +15,12 @@ import spring.mybatis.board.BoardController;
  
 //스프링부트클래스 실행 - run as - spring boot app (선택!!!!) / java application (main) / run on server(mvc, jsp, servlet)
 */
-@SpringBootApplication //실행
+@SpringBootApplication 
+//실행((내장) maven build- run as - maven build ... - xxx xxxx -> 컴파일, 라이브러리관리, 압축(*.war-pom.xml), 
+// (내장) tomcat firstboot-0.0.1-SNAPSHOT.war 실행
+// java -jar firstboot-0.0.1-SNAPSHOT.war 실행
 //@ComponentScan  
-//@ComponentScan(basePackages = "upload")
+@ComponentScan(basePackages = "upload")
 //@ComponentScan(basePackageClasses = BoardController.class)
 
 //@ComponentScan(basePackages = {"upload", "spring.mybatis.board"})
